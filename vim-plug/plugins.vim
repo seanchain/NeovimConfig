@@ -45,7 +45,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'rhysd/vim-clang-format'
     " Python Autopep8 support
     Plug 'tell-k/vim-autopep8'
-
+    " Vim Highlighted Yank
+    Plug 'machakann/vim-highlightedyank'
 
 
 call plug#end()

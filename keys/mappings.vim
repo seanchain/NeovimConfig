@@ -42,6 +42,7 @@ nnoremap <Leader>O O<Esc>^Da
 nnoremap <C-n> :tabedit<CR>
 noremap <Leader>n :tabn<CR>
 noremap <Leader>p :tabp<CR>
+noremap <Leader>e :edit<CR>
 
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
