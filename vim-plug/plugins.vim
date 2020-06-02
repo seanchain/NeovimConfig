@@ -47,6 +47,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tell-k/vim-autopep8'
     " Vim Highlighted Yank
     Plug 'machakann/vim-highlightedyank'
-
-
+    " SCSS vim support
+    Plug 'cakebaker/scss-syntax.vim'
 call plug#end()
