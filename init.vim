@@ -3,6 +3,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/snippets.vim
+source $HOME/.config/nvim/keys/coc.vim
 source $HOME/.config/nvim/keys/floatterm.vim
 source $HOME/.config/nvim/general/nerdtree.vim
 source $HOME/.config/nvim/general/leaderf.vim
