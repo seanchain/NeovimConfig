@@ -10,9 +10,9 @@ source $HOME/.config/nvim/general/leaderf.vim
 
 syntax on
 set termguicolors
-colorscheme base16-onedark
+colorscheme base16-gruvbox-dark-soft
 
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline_powerline_fonts = 1
 let g:rainbow_active = 1
 let g:indentguides_tabchar = '|'
@@ -36,8 +36,11 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType c let g:clang_format#auto_format = 1
 autocmd FileType java let g:clang_format#auto_format = 1
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+
+autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 

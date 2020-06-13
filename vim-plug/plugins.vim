@@ -22,7 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     " React snippets
-    Plug 'epilande/vim-react-snippets'
+    " Plug 'epilande/vim-react-snippets'
+    Plug 'seanchain/vim-react-snippets'
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
     " Indent guides
