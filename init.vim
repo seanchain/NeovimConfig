@@ -10,7 +10,9 @@ source $HOME/.config/nvim/general/leaderf.vim
 
 syntax on
 set termguicolors
-colorscheme base16-gruvbox-dark-soft
+let g:gruvbox_italic = 1
+let g:gruvbox_contrast_dark = 'soft'
+colorscheme gruvbox
 
 let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline_powerline_fonts = 1
@@ -28,12 +30,15 @@ let g:startify_custom_header = [
 
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff = 1
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:suda_smart_edit = 1
 
 lua require'colorizer'.setup()
 
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType c let g:clang_format#auto_format = 1
+autocmd FileType cpp let g:clang_format#auto_format = 1
 autocmd FileType java let g:clang_format#auto_format = 1
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2

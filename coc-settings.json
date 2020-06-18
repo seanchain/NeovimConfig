@@ -1,7 +1,13 @@
 {
-    "java.home": "/usr/lib/jvm/java-11-openjdk/",
-    "java.format.enabled": true,
-    "java.format.onType.enabled": true,
-    "java.format.settings.url": "/home/seanchain/.config/coc/extensions/node_modules/coc-java/formatters/eclipse-formatter.xml",
-    "coc.preferences.formatOnSaveFiletypes": ["javascript", "css", "scss", "sass"],
+  "java.home": "/usr/lib/jvm/java-11-openjdk/",
+  "java.format.enabled": true,
+  "java.format.onType.enabled": true,
+  "java.format.settings.url": "/home/seanchain/.config/coc/extensions/node_modules/coc-java/formatters/eclipse-formatter.xml",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "snippets.userSnippetsDirectory": "/home/seanchain/.config/snippets/",
 }

@@ -14,8 +14,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
-    " Base16 color schemes
-    Plug 'chriskempson/base16-vim'
+    " Gruvbox color scheme
+    Plug 'morhetz/gruvbox'
     " Autocompletion coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Vim airline plugin
@@ -50,4 +50,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'machakann/vim-highlightedyank'
     " SCSS vim support
     Plug 'cakebaker/scss-syntax.vim'
+    " Suda plugin for writing with sudo
+    Plug 'lambdalisue/suda.vim'
 call plug#end()
