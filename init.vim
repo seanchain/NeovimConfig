@@ -1,12 +1,13 @@
 
-source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/snippets.vim
 source $HOME/.config/nvim/keys/coc.vim
 source $HOME/.config/nvim/keys/floatterm.vim
 source $HOME/.config/nvim/general/nerdtree.vim
 source $HOME/.config/nvim/general/leaderf.vim
+
 
 syntax on
 set termguicolors
@@ -17,7 +18,6 @@ colorscheme gruvbox
 let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline_powerline_fonts = 1
 let g:rainbow_active = 1
-let g:indentguides_tabchar = '|'
 let g:startify_custom_header = [
 \ '',                      
 \ '   |\ | _  _\  /o._ _  ',
@@ -32,6 +32,10 @@ let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff = 1
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:suda_smart_edit = 1
+let g:indentLine_bgcolor_term = 202
+
+let g:mkdp_refresh_slow = 1
+
 
 lua require'colorizer'.setup()
 
@@ -44,8 +48,10 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+autocmd FileType markdown let g:indentLine_setConceal=0 
+autocmd FileType markdown set wrap linebreak
 
-autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 

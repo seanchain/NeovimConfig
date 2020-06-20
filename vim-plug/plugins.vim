@@ -27,7 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
     " Indent guides
-    Plug 'thaerkh/vim-indentguides'
+    Plug 'Yggdroot/indentLine'
     " LeaderF plugin for fuzzy search
     Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
     " Nvim colorizer
@@ -52,4 +52,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cakebaker/scss-syntax.vim'
     " Suda plugin for writing with sudo
     Plug 'lambdalisue/suda.vim'
+    " Vim markdown preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+    " Distraction free writing
+    Plug 'junegunn/goyo.vim'
 call plug#end()
