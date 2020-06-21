@@ -56,4 +56,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
     " Distraction free writing
     Plug 'junegunn/goyo.vim'
+    " Gofmt on save
+    Plug 'tweekmonster/gofmt.vim'
+
 call plug#end()

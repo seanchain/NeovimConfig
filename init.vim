@@ -35,7 +35,7 @@ let g:suda_smart_edit = 1
 let g:indentLine_bgcolor_term = 202
 
 let g:mkdp_refresh_slow = 1
-
+let g:gofmt_exe = 'goimports'
 
 lua require'colorizer'.setup()
 

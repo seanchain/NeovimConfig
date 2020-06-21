@@ -41,6 +41,7 @@ noremap <Leader>n :tabn<CR>
 noremap <Leader>p :tabp<CR>
 noremap <Leader>e :edit<CR>
 noremap <Leader>q :qa!<CR>
+noremap <Leader>g :Goyo<CR>
 
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
