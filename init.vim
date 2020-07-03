@@ -4,19 +4,24 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/snippets.vim
 source $HOME/.config/nvim/keys/coc.vim
-source $HOME/.config/nvim/keys/floatterm.vim
-source $HOME/.config/nvim/general/nerdtree.vim
+"source $HOME/.config/nvim/general/coc_explorer.vim
 source $HOME/.config/nvim/general/leaderf.vim
 
 
 syntax on
 set termguicolors
+
+" colorscheme gruvbox-material
+
 let g:gruvbox_italic = 1
 let g:gruvbox_contrast_dark = 'soft'
 colorscheme gruvbox
-
 let g:airline_theme = 'base16_gruvbox_dark_hard'
+
+"let g:gruvbox_material_enable_italic = 1
+"let g:gruvbox_material_background = 'soft'
 let g:airline_powerline_fonts = 1
+"let g:airline_theme = 'gruvbox_material'
 let g:rainbow_active = 1
 let g:startify_custom_header = [
 \ '',                      
@@ -37,6 +42,8 @@ let g:indentLine_bgcolor_term = 202
 let g:mkdp_refresh_slow = 1
 let g:gofmt_exe = 'goimports'
 
+
+
 lua require'colorizer'.setup()
 
 
@@ -54,6 +61,12 @@ autocmd FileType markdown set wrap linebreak
 autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
+augroup END
 
 augroup restore_cursor_shape
   autocmd!

@@ -11,11 +11,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    "Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
     " Gruvbox color scheme
     Plug 'morhetz/gruvbox'
+    Plug 'sainnhe/gruvbox-material'
     " Autocompletion coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Vim airline plugin
@@ -40,8 +41,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " Nerd Commenter
     Plug 'preservim/nerdcommenter'
-    " Float Terminal
-    Plug 'voldikss/vim-floaterm'
     " Clang Format
     Plug 'rhysd/vim-clang-format'
     " Python Autopep8 support
@@ -52,11 +51,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cakebaker/scss-syntax.vim'
     " Suda plugin for writing with sudo
     Plug 'lambdalisue/suda.vim'
-    " Vim markdown preview
+    " Vim markdown related
+    Plug 'vim-pandoc/vim-pandoc'
+    Plug 'vim-pandoc/vim-pandoc-syntax'
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
     " Distraction free writing
     Plug 'junegunn/goyo.vim'
     " Gofmt on save
     Plug 'tweekmonster/gofmt.vim'
+
 
 call plug#end()

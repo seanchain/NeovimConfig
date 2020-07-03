@@ -1,13 +1,13 @@
 {
-  "java.home": "/usr/lib/jvm/java-11-openjdk/",
+  "java.home": "/usr/lib/jvm/java-14-openjdk",
   "java.format.enabled": true,
   "java.format.onType.enabled": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "markdown",
     "javascript",
     "css",
     "scss",
     "sass"
   ],
-  "snippets.userSnippetsDirectory": "/home/seanchain/.config/snippets/"
+  "snippets.userSnippetsDirectory": "/home/seanchain/.config/snippets/",
+  "explorer.icon.enableNerdfont": true
 }

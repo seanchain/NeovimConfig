@@ -42,8 +42,11 @@ noremap <Leader>p :tabp<CR>
 noremap <Leader>e :edit<CR>
 noremap <Leader>q :qa!<CR>
 noremap <Leader>g :Goyo<CR>
+noremap <Leader>e :CocCommand explorer<CR>
 
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
 noremap <C-p> :MarkdownPreview<CR>
+
+vnoremap <Space> zf
