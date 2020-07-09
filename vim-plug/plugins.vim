@@ -14,9 +14,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
-    " Gruvbox color scheme
+    " Color schemes
     Plug 'morhetz/gruvbox'
     Plug 'sainnhe/gruvbox-material'
+    Plug 'dracula/vim', {'as': 'dracula'}
     " Autocompletion coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Vim airline plugin

@@ -11,28 +11,40 @@ source $HOME/.config/nvim/general/leaderf.vim
 syntax on
 set termguicolors
 
-" colorscheme gruvbox-material
+"let g:gruvbox_italic = 1
+"let g:gruvbox_contrast_dark = 'soft'
+"colorscheme gruvbox
+"let g:airline_theme = 'base16_gruvbox_dark_hard'
 
-let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = 'soft'
-colorscheme gruvbox
-let g:airline_theme = 'base16_gruvbox_dark_hard'
-
-"let g:gruvbox_material_enable_italic = 1
-"let g:gruvbox_material_background = 'soft'
+colorscheme dracula
+let g:dracula_italic = 1
+let g:dracula_bold = 1
+let g:dracula_underline = 1
 let g:airline_powerline_fonts = 1
-"let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'dracula'
 let g:rainbow_active = 1
-let g:startify_custom_header = [
-\ '',                      
-\ '   |\ | _  _\  /o._ _  ',
-\ '   | \|(/_(_)\/ || | | ',
-\ '',
-\ ]
+"let g:startify_custom_header = [
+"\ '',                      
+"\ '   |\ | _  _\  /o._ _  ',
+"\ '   | \|(/_(_)\/ || | | ',
+"\ '',
+"\ ]
 
 " let g:clang_format#code_style = 'webkit'
 " let g:clang_format#auto_format = 1
-
+"
+"
+let g:startify_custom_header = [
+\ '   ',
+\ '     _   _        __      ___           ',
+\ '    | \ | |       \ \    / (_)          ',
+\ '    |  \| | ___  __\ \  / / _ _ __ ___  ',
+\ '    | . ` |/ _ \/ _ \ \/ / | |  _ ` _ \ ',
+\ '    | |\  |  __/ (_) \  /  | | | | | | |',
+\ '    |_| \_|\___|\___/ \/   |_|_| |_| |_|',
+\ '    ',                                    
+\ '    ',                                    
+\ ]
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff = 1
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -52,7 +64,7 @@ autocmd FileType c let g:clang_format#auto_format = 1
 autocmd FileType cpp let g:clang_format#auto_format = 1
 autocmd FileType java let g:clang_format#auto_format = 1
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascriptreact setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType markdown let g:indentLine_setConceal=0 
@@ -61,12 +73,6 @@ autocmd FileType markdown set wrap linebreak
 autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
-augroup MyCocExplorer
-  autocmd!
-  autocmd VimEnter * sil! au! FileExplorer *
-  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
-augroup END
 
 augroup restore_cursor_shape
   autocmd!
