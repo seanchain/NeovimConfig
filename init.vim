@@ -20,7 +20,7 @@ colorscheme dracula
 let g:dracula_italic = 1
 let g:dracula_bold = 1
 let g:dracula_underline = 1
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dracula'
 let g:rainbow_active = 1
 "let g:startify_custom_header = [
@@ -53,7 +53,7 @@ let g:indentLine_bgcolor_term = 202
 
 let g:mkdp_refresh_slow = 1
 let g:gofmt_exe = 'goimports'
-
+let g:pandoc#modules#disabled = ["spell", "folding"]
 
 
 lua require'colorizer'.setup()
@@ -71,6 +71,8 @@ autocmd FileType markdown let g:indentLine_setConceal=0
 autocmd FileType markdown set wrap linebreak
 
 autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html Prettier
+
+highlight Comment cterm=italic gui=italic
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 

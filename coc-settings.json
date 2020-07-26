@@ -9,5 +9,9 @@
     "sass"
   ],
   "snippets.userSnippetsDirectory": "/home/seanchain/.config/snippets/",
-  "explorer.icon.enableNerdfont": true
+  "explorer.icon.enableNerdfont": true,
+  "go.disable": {
+      "workspaceFolders": false
+  },
+  "python.pythonPath": "/home/seanchain/.pyenv/py3.8/bin/python"
 }

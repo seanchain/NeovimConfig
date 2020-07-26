@@ -53,8 +53,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Suda plugin for writing with sudo
     Plug 'lambdalisue/suda.vim'
     " Vim markdown related
-    Plug 'vim-pandoc/vim-pandoc'
-    Plug 'vim-pandoc/vim-pandoc-syntax'
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
     " Distraction free writing
     Plug 'junegunn/goyo.vim'
