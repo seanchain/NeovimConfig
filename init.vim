@@ -16,12 +16,12 @@ set termguicolors
 "colorscheme gruvbox
 "let g:airline_theme = 'base16_gruvbox_dark_hard'
 
-colorscheme dracula
+colorscheme onedark
 let g:dracula_italic = 1
 let g:dracula_bold = 1
 let g:dracula_underline = 1
 "let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dracula'
+let g:airline_theme = 'onedark'
 let g:rainbow_active = 1
 "let g:startify_custom_header = [
 "\ '',                      
