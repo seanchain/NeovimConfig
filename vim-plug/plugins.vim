@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Color schemes
     Plug 'joshdick/onedark.vim'
+    Plug 'arcticicestudio/nord-vim'
     " Autocompletion coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Vim airline plugin
@@ -56,6 +57,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/goyo.vim'
     " Gofmt on save
     Plug 'tweekmonster/gofmt.vim'
-
+    " Vim EasyMotion
+    Plug 'easymotion/vim-easymotion'
 
 call plug#end()

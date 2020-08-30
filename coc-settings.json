@@ -1,7 +1,6 @@
 {
   "java.home": "/usr/lib/jvm/java-14-openjdk",
-  "java.format.enabled": true,
-  "java.format.onType.enabled": true,
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar",
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "css",
@@ -11,7 +10,7 @@
   "snippets.userSnippetsDirectory": "/home/seanchain/.config/snippets/",
   "explorer.icon.enableNerdfont": true,
   "go.disable": {
-      "workspaceFolders": false
+    "workspaceFolders": false
   },
   "python.pythonPath": "/home/seanchain/.pyenv/py3.8/bin/python"
 }
