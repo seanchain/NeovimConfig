@@ -4,7 +4,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/keys/snippets.vim
 source $HOME/.config/nvim/keys/coc.vim
-"source $HOME/.config/nvim/general/coc_explorer.vim
+source $HOME/.config/nvim/general/function.vim
 source $HOME/.config/nvim/general/leaderf.vim
 
 
@@ -80,4 +80,5 @@ augroup restore_cursor_shape
   au VimLeave * set guicursor=a:ver10-blinkoff0
 augroup END
 
+let g:startup = getcwd()
 
